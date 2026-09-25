@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.saborquerende.com.br/sitemap.xml
+Sitemap: https://sabor-que-rende.pages.dev/sitemap.xml
