@@ -1,0 +1,55 @@
+.admin-page { min-height: 100vh; background: #eeeadf; font-size: 16px; }
+.admin-auth { display: grid; min-height: 100vh; padding: 28px; place-items: center; }
+.admin-auth-card { width: min(100%, 470px); padding: clamp(28px, 5vw, 48px); background: var(--paper); border-top: 7px solid var(--olive); border-bottom: 1px solid var(--line-dark); }
+.admin-auth-card .brand { display: inline-block; margin-bottom: 48px; }
+.admin-auth-card .eyebrow { margin-bottom: 16px; }
+.admin-auth-card h1 { font-size: clamp(2.6rem, 8vw, 4rem); }
+.admin-auth-card > p { color: var(--muted); }
+.admin-auth-card form { display: grid; gap: 20px; margin: 30px 0; }
+.admin-header { background: var(--paper); border-bottom: 1px solid var(--line-dark); }
+.admin-header .container, .admin-header-actions, .admin-title-row { display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+.admin-header .container { min-height: 76px; }
+.admin-header-actions { justify-content: flex-end; }
+.admin-hero { padding: 52px 0 38px; border-bottom: 1px solid var(--line-dark); }
+.admin-title-row { align-items: end; }
+.admin-title-row h1 { margin: 12px 0 7px; font-size: clamp(3rem, 6vw, 5.2rem); }
+.admin-title-row p { margin: 0; color: var(--muted); }
+.unread-badge { min-width: 130px; padding: 14px 0; border-top: 3px solid var(--terracotta); border-bottom: 1px solid var(--line-dark); text-align: center; }
+.unread-badge strong { display: block; color: var(--terracotta-dark); font-family: var(--serif); font-size: 2.2rem; line-height: 1; }
+.unread-badge span { color: var(--muted); font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.admin-content { padding-top: 38px; }
+.message-list { display: grid; border-top: 1px solid var(--line-dark); }
+.message-card { padding: 26px 0; border-bottom: 1px solid var(--line-dark); }
+.message-card.is-unread { padding-left: 22px; border-left: 5px solid var(--terracotta); }
+.message-card header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.message-card h2 { margin: 4px 0 5px; font-size: 1.65rem; }
+.message-name { color: var(--terracotta-dark); font-size: .68rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.message-card time { color: var(--muted); font-size: .76rem; }
+.message-status { padding: 3px 0; color: var(--olive-soft); border-bottom: 1px solid currentColor; font-size: .66rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.is-unread .message-status { color: var(--terracotta-dark); }
+.message-content { max-width: 76ch; white-space: pre-wrap; overflow-wrap: anywhere; }
+.message-actions, .dialog-actions, .admin-pagination { display: flex; align-items: center; gap: 10px; }
+.message-actions { justify-content: flex-end; margin-top: 18px; }
+.btn-danger { background: #852c20; color: #fff; border-color: #852c20; }
+.btn-danger:hover { background: #651f17; border-color: #651f17; }
+.admin-pagination { justify-content: center; margin-top: 32px; }
+.confirm-dialog { width: min(calc(100% - 30px), 440px); padding: 32px; background: var(--paper); border: 0; border-top: 7px solid var(--terracotta); border-radius: 0; }
+.confirm-dialog::backdrop { background: rgba(31, 41, 32, .68); }
+.dialog-actions { justify-content: flex-end; margin-top: 26px; }
+.form-feedback { min-height: 1.6em; }
+.form-feedback.is-error { color: #852c20; }
+.form-feedback.is-success { color: var(--olive-soft); }
+.field-help { color: var(--muted); text-align: right; }
+.contact-honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+.contact-form [aria-invalid="true"] { border-color: #852c20; }
+.contact-form button:disabled, .admin-page button:disabled { cursor: not-allowed; opacity: .55; }
+@media (max-width: 700px) {
+  .admin-header .container, .admin-title-row { align-items: flex-start; flex-direction: column; }
+  .admin-header .container { padding-block: 16px; }
+  .admin-header-actions { width: 100%; justify-content: space-between; }
+  .unread-badge { width: 100%; }
+  .message-card.is-unread { padding-left: 14px; }
+  .message-card header { flex-direction: column; }
+  .message-actions { align-items: stretch; flex-direction: column; }
+  .message-actions .btn { width: 100%; }
+}

@@ -38,13 +38,4 @@ document.addEventListener('DOMContentLoaded', () => {
     recipeMeta.insertAdjacentElement('afterend', jumpLink);
   }
 
-  const form = document.querySelector('[data-contact-form]');
-  if (form) {
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const feedback = form.querySelector('[data-form-feedback]');
-      feedback.textContent = 'Este formulário é uma demonstração local. Ao publicar o site, conecte-o a um serviço seguro de envio.';
-      feedback.focus();
-    });
-  }
 });

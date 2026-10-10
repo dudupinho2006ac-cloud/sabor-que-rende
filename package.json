@@ -1,0 +1,9 @@
+{
+  "name": "sabor-que-rende",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-isolation=none",
+    "password-hash": "node scripts/generate-password-hash.mjs"
+  }
+}
